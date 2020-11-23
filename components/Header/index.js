@@ -1,7 +1,7 @@
 export default function Header() {
   return (
-    <Heder>
+    <header>
       I am a header!
-    </Heder>
+    </header>
   )
 }
