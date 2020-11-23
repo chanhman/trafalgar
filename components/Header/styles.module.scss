@@ -1,0 +1,26 @@
+@import 'styles/mixins.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.6875rem;
+  max-width: 77.875rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.links {
+  @include ul-reset;
+
+  display: flex;
+
+  li {
+    margin-left: 2.5rem;
+  }
+
+  a {
+    color: #1f1534;
+    opacity: 0.5;
+  }
+}
