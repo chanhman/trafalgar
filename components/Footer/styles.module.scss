@@ -1,19 +1,53 @@
 @import 'styles/mixins';
 
 .container {
+  position: relative;
+
+  margin-top: 4.5rem;
   padding-top: 7.3125rem;
   padding-bottom: 7.3125rem;
 
   color: #fff;
 
   background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: -4.5rem;
+    right: 3.125rem;
+    z-index: -1;
+
+    display: block;
+    height: 7.1875rem;
+    width: 8.25rem;
+
+    background: transparent url(/dots.svg) center center no-repeat;
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0.625rem;
+    left: 0.625rem;
+
+    display: block;
+    height: 5.625rem;
+    width: 6.375rem;
+
+    background: transparent url(/dots.svg) left top no-repeat;
+    opacity: 0.26;
+  }
 }
 
 .inner {
   @include container;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 24.375rem 1fr;
   grid-column-gap: 9.0625rem;
 }
 
