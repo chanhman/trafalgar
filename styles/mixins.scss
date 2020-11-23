@@ -5,3 +5,11 @@
 
   list-style-type: none;
 }
+
+@mixin container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80rem;
+  padding-right: 3.125rem;
+  padding-left: 3.125rem;
+}

@@ -1,13 +1,12 @@
-@import 'styles/mixins.scss';
+@import 'styles/mixins';
 
 .container {
+  @include container;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 9.6875rem;
-  max-width: 77.875rem;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .links {

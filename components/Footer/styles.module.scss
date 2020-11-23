@@ -1,0 +1,49 @@
+@import 'styles/mixins';
+
+.container {
+  padding-top: 7.3125rem;
+  padding-bottom: 7.3125rem;
+
+  color: #fff;
+
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+}
+
+.inner {
+  @include container;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 9.0625rem;
+}
+
+.tagline {
+  margin-bottom: 1.875rem;
+
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.copyright {
+  font-size: 1rem;
+}
+
+.linksColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.links {
+  @include ul-reset;
+
+  li:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.linksHeading {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+
+  font-weight: 700;
+}
