@@ -1,4 +1,4 @@
-const highlights = [
+const highlightsData = [
   {
     image: '/highlightImage1.png',
     heading: 'Leading healthcare providers',
@@ -15,4 +15,4 @@ const highlights = [
   },
 ]
 
-export default highlights
+export default highlightsData

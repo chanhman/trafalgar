@@ -1,4 +1,4 @@
-const services = [
+const servicesData = [
   {
     icon: '/serviceIcon1.svg',
     name: 'Search doctor',
@@ -36,4 +36,4 @@ const services = [
   },
 ]
 
-export default services
+export default servicesData
