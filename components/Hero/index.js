@@ -1,4 +1,5 @@
 import styles from './styles.module.scss'
+import buttons from 'styles/buttons.module.scss'
 
 export default function Hero() {
   return (
@@ -10,7 +11,7 @@ export default function Hero() {
             Trafalgar provides progressive, and affordable healthcare, accessible
             on mobile and online for everyone
           </p>
-          <a className={styles.button} href="#">Consult today</a>
+          <a className={buttons.primary} href="#">Consult today</a>
         </div>
         <div>
           <img src="/hero-image.png" alt=""/>

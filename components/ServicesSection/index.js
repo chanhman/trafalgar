@@ -1,6 +1,7 @@
 import styles from './styles.module.scss'
 import servicesData from './servicesData'
 import Service from './Service'
+import buttons from 'styles/buttons.module.scss'
 
 export default function ServicesSection() {
   return (
@@ -25,7 +26,7 @@ export default function ServicesSection() {
           ))}
         </div>
         <div className={styles.footer}>
-          <a className={styles.button} href="#">
+          <a className={buttons.secondary} href="#">
             Learn more
           </a>
         </div>

@@ -7,7 +7,7 @@ export default function Service({icon, name, description}) {
         <img src={icon} alt="" />
       </div>
       <h3 className={styles.name}>{name}</h3>
-      <div className={styles.description}>{description}</div>
+      <p className={styles.description}>{description}</p>
     </div>
   )
 }

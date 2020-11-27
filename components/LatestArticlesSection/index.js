@@ -1,6 +1,7 @@
 import styles from './styles.module.scss'
 import Article from './Article'
 import LatestArticlesData from './LatestArticlesData'
+import buttons from 'styles/buttons.module.scss'
 
 export default function LatestArticlesSection() {
   return (
@@ -16,7 +17,7 @@ export default function LatestArticlesSection() {
         ))}
       </div>
       <div className={styles.footer}>
-        <a className={styles.button} href="#">
+        <a className={buttons.secondary} href="#">
           View all
         </a>
       </div>

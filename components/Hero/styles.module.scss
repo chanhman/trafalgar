@@ -1,17 +1,17 @@
 @import 'styles/mixins.scss';
 
 .wrapper {
-  margin-bottom: 190px;
+  margin-bottom: 11.875rem;
 
-  background: transparent url(/dots.svg) top left -50px no-repeat;
+  background: transparent url(/dots.svg) top left -3.125rem no-repeat;
 }
 
 .container {
   @include container;
 
   display: grid;
-  grid-column-gap: 110px;
-  grid-template-columns: 1fr 650px;
+  grid-column-gap: 6.875rem;
+  grid-template-columns: 1fr 40.625rem;
 
   img {
     max-width: 100%;
@@ -23,36 +23,15 @@
 }
 
 .heading {
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 1.15;
 }
 
 .description {
-  margin-bottom: 45px;
+  margin-bottom: 2.8125rem;
 
-  color: #7d7987;
-  font-size: 21px;
+  font-size: 1.3125rem;
   line-height: 1.4;
-}
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 56px;
-  padding-right: 40px;
-  padding-left: 40px;
-
-  color: #fff;
-  font-size: 18px;
-  text-decoration: none;
-
-  background-color: #458ff6;
-  border-radius: 30px;
-
-  &:hover {
-    background-color: darken(#458ff6, 5%);
-  }
 }

@@ -6,10 +6,11 @@ import LatestArticlesSection from 'components/LatestArticlesSection'
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout title="Trafalgar">
       <Hero />
       <ServicesSection />
       <HighlightsSection />
+      {/* Testimonial carousel */}
       <LatestArticlesSection />
     </Layout>
   )

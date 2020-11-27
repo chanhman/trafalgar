@@ -1,13 +1,16 @@
+@import 'styles/mixins.scss';
+
 .container {
+  @include boxDropShadow;
+
   overflow: hidden;
 
   background: #fff;
-  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-  border-radius: 20px;
+  border-radius: var(--border-radius);
 }
 
 .image {
-  height: 240px;
+  height: 15rem;
   overflow: hidden;
 
   img {
@@ -16,24 +19,23 @@
 }
 
 .body {
-  padding: 32px;
+  padding: 2rem;
 }
 
 .heading {
   margin-top: 0;
   margin-bottom: 1rem;
 
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 
 .description {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 
-  color: #7d7987;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .link {
-  color: #4089ed;
+  color: var(--primary-color);
 }

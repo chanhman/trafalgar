@@ -1,4 +1,5 @@
 import styles from './styles.module.scss'
+import buttons from 'styles/buttons.module.scss'
 
 export default function Highlight({image, heading, description, ctaLabel}) {
   return (
@@ -9,7 +10,7 @@ export default function Highlight({image, heading, description, ctaLabel}) {
       <div>
         <h2 className={styles.heading}>{heading}</h2>
         <p className={styles.description}>{description}</p>
-        <a className={styles.button} href="#">
+        <a className={buttons.secondary} href="#">
           {ctaLabel}
         </a>
       </div>

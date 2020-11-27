@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&display=swap');
 
+:root {
+  --primary-color: #458ff6;
+  --primary-color-dark: #3580eb;
+  --border-radius: 1.25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
@@ -7,15 +17,16 @@ body {
   font-family: 'Mulish', sans-serif;
 }
 
+h2 {
+  font-size: 2.25rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 p {
+  color: #7d7987;
   line-height: 1.6;
 }
