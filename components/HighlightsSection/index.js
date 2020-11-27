@@ -1,11 +1,11 @@
 import styles from './styles.module.scss'
 import Highlight from './Highlight'
-import highlights from './highlights.js'
+import highlightsData from './highlightsData.js'
 
 export default function HighlightsSection() {
   return (
     <div className={styles.container}>
-      {highlights.map((highlight) => (
+      {highlightsData.map((highlight) => (
         <Highlight
           image={highlight.image}
           heading={highlight.heading}

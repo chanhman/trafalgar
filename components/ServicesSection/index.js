@@ -1,5 +1,5 @@
 import styles from './styles.module.scss'
-import services from './services'
+import servicesData from './servicesData'
 import Service from './Service'
 
 export default function ServicesSection() {
@@ -16,7 +16,7 @@ export default function ServicesSection() {
       </div>
       <div className={styles.servicesWrapper}>
         <div className={styles.services}>
-          {services.map((service) => (
+          {servicesData.map((service) => (
             <Service
               icon={service.icon}
               name={service.name}
