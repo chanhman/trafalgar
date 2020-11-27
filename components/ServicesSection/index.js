@@ -14,7 +14,7 @@ export default function ServicesSection() {
           your health
         </p>
       </div>
-      <div className={styles.servicesWrapper}>
+      <div className={styles.servicesContainer}>
         <div className={styles.services}>
           {servicesData.map((service) => (
             <Service
