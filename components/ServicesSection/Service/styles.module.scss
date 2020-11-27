@@ -1,0 +1,35 @@
+.container {
+  padding: 3.125rem 2.5rem;
+
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0.625rem 2.5rem 3.125rem rgba(229, 233, 246, 0.4);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  height: 95px;
+  margin-bottom: 25px;
+  width: 67px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.name {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  font-size: 1.5rem;
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: #7d7987;
+  font-size: 1rem;
+  line-height: 1.75;
+}
