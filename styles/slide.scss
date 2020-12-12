@@ -1,0 +1,45 @@
+@import 'styles/mixins.scss';
+
+.yas {
+  position: static;
+
+  .slick-dots {
+    @include ul-reset;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: flex !important;
+    justify-content: center;
+    padding-top: 42px;
+    width: 100%;
+
+    li {
+      display: flex;
+      margin-right: 9px;
+      margin-left: 9px;
+
+      &.slick-active {
+        button {
+          opacity: 1;
+        }
+      }
+    }
+
+    button {
+      display: inline-block;
+      height: 10px;
+      padding: 0;
+      width: 10px;
+
+      font-size: 0;
+
+      background-color: #5B9BF3;
+      border: 0;
+      border-radius: 50%;
+      cursor: pointer;
+      opacity: 0.3;
+    }
+  }
+}

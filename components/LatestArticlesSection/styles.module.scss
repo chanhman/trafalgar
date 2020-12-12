@@ -1,11 +1,12 @@
 @import 'styles/mixins.scss';
+
 .container {
-  background: url('/latestArticlesEggplant.svg') right center no-repeat;
+  background: url('/latestArticlesEggplant.svg') top right no-repeat;
 }
 
 .heading {
   position: relative;
-
+  margin-top: 0;
   padding-bottom: 1.5rem;
 
   text-align: center;
