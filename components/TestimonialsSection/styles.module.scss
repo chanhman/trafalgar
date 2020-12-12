@@ -12,7 +12,7 @@
   color: #fff;
 
   background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
-  border-radius: 1.5rem;
+  border-radius: var(--border-radius);
 
   &::before {
     content: '';
@@ -22,7 +22,7 @@
 
     display: block;
     height: 100%;
-    width: 52px;
+    width: 3.25rem;
 
     background: url('/dots.svg') bottom 2.5rem left no-repeat;
   }
