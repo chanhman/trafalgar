@@ -1,5 +1,6 @@
 import Slider from 'react-slick'
 import styles from './styles.module.scss'
+import testimonialsData from './testimonialsData'
 
 export default function TestimonialsSection() {
   const sliderSettings = {
@@ -16,46 +17,24 @@ export default function TestimonialsSection() {
       <section className={styles.container}>
         <h2 className={styles.heading}>What our customer are saying</h2>
         <Slider className={styles.yas} {...sliderSettings}>
-          <blockquote>
-            <div className={styles.testimonial}>
-              <p className={styles.quote}>
-                "Our dedicated patient engagement app and web portal allow you
-                to access information instantaneously (no tedeous form, long
-                calls, or administrative hassle) and securely."
-              </p>
-              <footer>
-                <img
-                  className={styles.avatar}
-                  src="/testimonial-avatar.jpg"
-                  alt=""
-                />
-                <cite>
-                  <div className={styles.name}>Edward Newgate</div>
-                  <div className={styles.position}>Founder Circle</div>
-                </cite>
-              </footer>
-            </div>
-          </blockquote>
-          <blockquote>
-            <div className={styles.testimonial}>
-              <p className={styles.quote}>
-                "Our dedicated patient engagement app and web portal allow you
-                to access information instantaneously (no tedeous form, long
-                calls, or administrative hassle) and securely."
-              </p>
-              <footer>
-                <img
-                  className={styles.avatar}
-                  src="/testimonial-avatar.jpg"
-                  alt=""
-                />
-                <cite>
-                  <div className={styles.name}>Edward Newgate</div>
-                  <div className={styles.position}>Founder Circle</div>
-                </cite>
-              </footer>
-            </div>
-          </blockquote>
+          {testimonialsData.map((testimonial) => (
+            <blockquote key={testimonial.id}>
+              <div className={styles.testimonial}>
+                <p className={styles.quote}>{testimonial.quote}</p>
+                <footer>
+                  <img
+                    className={styles.avatar}
+                    src={testimonial.avatar}
+                    alt=""
+                  />
+                  <cite>
+                    <div className={styles.name}>{testimonial.name}</div>
+                    <div className={styles.position}>{testimonial.position}</div>
+                  </cite>
+                </footer>
+              </div>
+            </blockquote>
+          ))}
         </Slider>
       </section>
     </>
