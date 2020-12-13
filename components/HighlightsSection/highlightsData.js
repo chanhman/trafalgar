@@ -1,5 +1,8 @@
+import { v4 as uuidv4 } from 'uuid'
+
 const highlightsData = [
   {
+    id: uuidv4(),
     image: '/highlightImage1.png',
     heading: 'Leading healthcare providers',
     description:
@@ -7,6 +10,7 @@ const highlightsData = [
     ctaLabel: 'Learn more',
   },
   {
+    id: uuidv4(),
     image: '/highlightImage2.png',
     heading: 'Download our mobile apps',
     description:

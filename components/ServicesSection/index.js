@@ -19,6 +19,7 @@ export default function ServicesSection() {
         <div className={styles.services}>
           {servicesData.map((service) => (
             <Service
+              key={service.id}
               icon={service.icon}
               name={service.name}
               description={service.description}

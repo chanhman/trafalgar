@@ -10,6 +10,7 @@ export default function LatestArticlesSection() {
       <div className={styles.articlesContainer}>
         {LatestArticlesData.map((latestArticle) => (
           <Article
+            key={latestArticle.id}
             image={latestArticle.image}
             heading={latestArticle.heading}
             description={latestArticle.description}

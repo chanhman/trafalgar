@@ -7,6 +7,7 @@ export default function HighlightsSection() {
     <div className={styles.container}>
       {highlightsData.map((highlight) => (
         <Highlight
+          key={highlight.id}
           image={highlight.image}
           heading={highlight.heading}
           description={highlight.description}
